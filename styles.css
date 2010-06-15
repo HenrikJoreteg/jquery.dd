@@ -1,4 +1,5 @@
 div#test1 {
+	position: relative;
 	height: 20px;
 	width: 100px;
 	border: 1px solid blue;
@@ -6,6 +7,7 @@ div#test1 {
 }
 
 div#test2 {
+	position: relative;
 	height: 20px;
 	width: 100px;
 	border: 1px solid blue;

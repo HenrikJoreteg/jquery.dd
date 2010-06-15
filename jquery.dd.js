@@ -158,7 +158,8 @@
 				}
 	
 			});
-		
+			
+			return main_div;
 		});
 	};
 	
@@ -167,8 +168,6 @@
 			var option;
 			
 			option = $(this).children('ul').children('li[rel=' + val + ']');
-			
-			console.log(option);
 			
 			if (option.length) {
 				$(this).children('input').val(option.attr('rel'));
