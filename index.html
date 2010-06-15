@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dropdown tests</title>
+		<script src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load("jquery", "1.4");
+		</script>
+		<script type="text/javascript" src="jquery.dd.js"></script>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			$(function() {
+				$('select').dd();
+			});
+		</script>
+	</head>
+	<body>
+		<select name="test" class="hello" id="test1">
+			<option value="">----</option>
+			<option value="1" selected="selected">Red</option>
+			<option value="2">Green</option>
+			<option value="3">Blue</option>
+			<option value="4">Orange</option>
+			<option value="5">Purple</option>
+			<option value="6">Yellow</option>
+			<option value="7">White</option>
+			<option value="8">Black</option>
+		</select>
+		<select name="another_test" class="hello also" id="test2">
+			<option value="">----</option>
+			<option value="1">Red</option>
+			<option>Green</option>
+			<option value="3">Blue</option>
+			<option value="4">Orange</option>
+			<option value="5">Purple</option>
+			<option value="6">Yellow</option>
+			<option value="7">White</option>
+			<option value="8">Black</option>
+		</select>
+	</body>
+</html>

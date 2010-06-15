@@ -1,0 +1,36 @@
+div#test1 {
+	height: 20px;
+	width: 100px;
+	border: 1px solid blue;
+	display: inline-block;
+}
+
+div#test2 {
+	height: 20px;
+	width: 100px;
+	border: 1px solid blue;
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid green;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+li:hover {
+	background-color: #88DDFF;
+}
+
+.dd_button {
+	border: 1px solid red;
+	height: 20px;
+	float: right;
+	width: 20px;
+}
