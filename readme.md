@@ -21,7 +21,8 @@ Advanced use:
 
 1. It supports `onChange` events by passing a function to the plugin like this:
 
-	$('#test1').dd({
-		change_callback: function() {alert(this);}
-	});
+
+		$('#test1').dd({
+			change_callback: function() {alert(this);}
+		});
 	
