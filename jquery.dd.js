@@ -135,6 +135,10 @@
             if (selected) {
                 main_div.dd_set_value(selected);
             }
+            else {
+            	// set first
+            	main_div.dd_set_value(option_list.children().first().attr('rel'));
+            }
                         
             // listen for click events in the document
             // and either hide or show depending on target

@@ -1,3 +1,8 @@
+body {
+	font-family: helvetica;
+	font-size: ;
+}
+
 div#test1 {
 	position: relative;
 	height: 20px;
@@ -14,25 +19,42 @@ div#test2 {
 	display: inline-block;
 }
 
+.hello {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
 ul {
 	list-style-type: none;
-	margin: 0;
+	margin: -1px 0 0 0;
 	padding: 0;
 	border: 1px solid green;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
 }
 
 li {
 	margin: 0;
-	padding: 0;
+	padding: 1px 0px;
+	-webkit-transition: all .2s ease-out;
 }
 
 li:hover {
-	background-color: #88DDFF;
+	background-color: #AADDFF;
 }
 
 .dd_button {
-	border: 1px solid red;
+	border: 1px solid black;
 	height: 20px;
+	margin: -1px -1px	 0 0;
 	float: right;
 	width: 20px;
+	background-color: #777;
+}
+
+.dd_current {
+	display: block;
+	padding: 2px;
 }
