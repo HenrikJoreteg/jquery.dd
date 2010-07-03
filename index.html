@@ -10,7 +10,14 @@
 		<link href="styles.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript">
 			$(function() {
-				$('select').dd();
+				$('#test1').dd({
+					change_callback: function() {console.log(this);}
+				});
+				
+				$('#test2').dd({
+					change_callback: function() {console.log(this);}
+				}).dd_set_value;
+				
 			});
 		</script>
 	</head>
