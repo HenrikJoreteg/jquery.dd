@@ -57,4 +57,5 @@ li:hover {
 .dd_current {
 	display: block;
 	padding: 2px;
+	width: 20px;
 }

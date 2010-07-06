@@ -16,8 +16,8 @@
             // get the currently selected value of the select
             selected = $(this).val();
             
-            main_div = $('<div><span class="dd_current"></span></div>');
-            input = $('<input type="hidden"/>');
+            main_div = $('<div><input type="text" class="dd_current"/></div>');
+            input = $('<input type="hidden" class="dd_value"/>');
             
             // Build attrs object
             // if they're not defined set them equal to ''
@@ -124,7 +124,7 @@
             main_div.delegate('li', 'click', function () {
                 input.val($(this).attr('rel'));
                 
-                main_div.children('.dd_current').html($(this).html());
+                main_div.children('input.dd_current').val($(this).html());
                 
                 if ($.isFunction(settings.change_callback)) {
                     settings.change_callback.apply(this);
@@ -170,8 +170,8 @@
             option = $(this).children('ul').children('li[rel=' + val + ']');
             
             if (option.length) {
-                $(this).children('input').val(option.attr('rel'));
-                $(this).children('span.dd_current').html(option.html());
+                $(this).children('input.dd_value').val(option.attr('rel'));
+                $(this).children('input.dd_current').val(option.html());
             }
             
             // check to make sure callback is a function and execute it.
